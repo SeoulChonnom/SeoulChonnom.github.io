@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/13debb153828720a4378a671f57b0d72?family=NotoKR-Medium+Medium");
+@import url("https://db.onlinewebfonts.com/c/8d989ff4b83af705559067c0fc83d131?family=NotoKR-DemiLight+DemiLight");
+
+body {
+  background-color: rgb(241, 214, 208);
+}
+
+#header {
+  height: 5vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5vh;
+  border-radius: 10px;
+  background-color: rgb(252, 242, 242);
+}
+
+#footer {
+  height: 5vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1vh;
+  border-radius: 10px;
+  background-color: rgb(252, 242, 242);
+}
+
+#mapDiv {
+  background-color: rgb(252, 242, 242);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  height: 80vh;
+}
+
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  object-fit: contain;
+}
