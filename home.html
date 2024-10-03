@@ -2,17 +2,33 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Seoul CHONNOM</title>
     <link rel="stylesheet" type="text/css" href="static/css/home.css" />
   </head>
   <body>
-    <div id="header">SLCN</div>
-    <div id="main">
-      <div id="mapDiv">
-        <image id="map" src="./static/img/map.png"></image>
-      </div>
-      <div id="photoIndex"></div>
+    <div id="root">
+      <main>
+        <div id="content">
+          <div id="header">
+            <image id="SLCN" src="./static/img/SLCN.png"></image>
+          </div>
+          <div id="infoDiv">서울 촌놈 여행 경로 😎</div>
+          <div id="mapDiv">
+            <image id="map" src="./static/img/map.png"></image>
+          </div>
+          <div id="photoDiv">
+            <a id="myboxLink" href="http://naver.me/GTnQ1tj1" target="_blank">
+              <img id="mybox" src="./static/img/mybox.png" />
+            </a>
+            <div id="myboxDiv">
+              사진은 드라이브에서 📷
+              <div id="pwDiv">암호 🔒 : 입사일</div>
+            </div>
+          </div>
+          <div id="footer">© Seoul CHONNOM</div>
+        </div>
+      </main>
     </div>
-    <div id="footer">SLCN</div>
   </body>
 </html>
