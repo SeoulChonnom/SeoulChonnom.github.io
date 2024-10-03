@@ -6,8 +6,19 @@ body {
   background-color: rgb(241, 214, 208);
 }
 
+#content {
+  background-color: rgb(252, 242, 242);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  border-radius: 10px;
+  text-align: center;
+  height: 95vh;
+}
+
 #header {
-  height: 5vh;
+  height: 10vh;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 0.5vh;
@@ -15,24 +26,19 @@ body {
   background-color: rgb(252, 242, 242);
 }
 
-#footer {
-  height: 5vh;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1vh;
-  border-radius: 10px;
-  background-color: rgb(252, 242, 242);
+#SLCN {
+  height: 100%;
+}
+
+#infoDiv {
+  font-family: "NotoKR-Medium Medium";
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #mapDiv {
-  background-color: rgb(252, 242, 242);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-radius: 10px;
-  text-align: center;
-  height: 80vh;
+  height: 70vh;
+  margin-bottom: 1vh;
 }
 
 #map {
@@ -44,4 +50,41 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   object-fit: contain;
+  overflow: hidden;
+}
+
+#photoDiv {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myboxLink {
+  height: 70%;
+}
+
+#mybox {
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#myboxDiv {
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-family: "NotoKR-Medium Medium";
+  font-size: 0.7rem;
+}
+
+#pwDiv {
+  font-size: 0.6rem;
+}
+
+#footer {
+  margin-top: 1.5vh;
+  font-family: "NotoKR-Medium Medium";
+  font-size: 0.5rem;
 }
