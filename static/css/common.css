@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/13debb153828720a4378a671f57b0d72?family=NotoKR-Medium+Medium");
+@import url("https://db.onlinewebfonts.com/c/8d989ff4b83af705559067c0fc83d131?family=NotoKR-DemiLight+DemiLight");
+
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-color: rgb(241, 214, 208);
+  }
+
+  main {
+    background-color: rgb(252, 242, 242);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border-radius: 10px;
+    text-align: center;
+    height: 96vh;
+  }
+
+  #header {
+    height: 10vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5vh;
+    border-radius: 10px;
+    background-color: rgb(252, 242, 242);
+  }
+
+  #SLCN {
+    height: 100%;
+  }
+
+  #footer {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.5rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    background-color: rgb(241, 214, 208);
+  }
+
+  main {
+    background-color: rgb(252, 242, 242);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    height: 96vh;
+    width: 50vh;
+  }
+
+  #header {
+    height: 10vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5vh;
+    border-radius: 10px;
+    background-color: rgb(252, 242, 242);
+  }
+
+  #SLCN {
+    height: 100%;
+  }
+
+  #footer {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.5rem;
+  }
+}

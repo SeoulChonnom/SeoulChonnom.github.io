@@ -2,89 +2,180 @@
 @import url("https://db.onlinewebfonts.com/c/13debb153828720a4378a671f57b0d72?family=NotoKR-Medium+Medium");
 @import url("https://db.onlinewebfonts.com/c/8d989ff4b83af705559067c0fc83d131?family=NotoKR-DemiLight+DemiLight");
 
-body {
-  background-color: rgb(241, 214, 208);
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-color: rgb(241, 214, 208);
+  }
+
+  #content {
+    background-color: rgb(252, 242, 242);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border-radius: 10px;
+    text-align: center;
+    height: 96vh;
+  }
+
+  #header {
+    height: 10vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5vh;
+    border-radius: 10px;
+    background-color: rgb(252, 242, 242);
+  }
+
+  #SLCN {
+    height: 100%;
+  }
+
+  #infoDiv {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #mapDiv {
+    height: 70vh;
+    margin-bottom: 1vh;
+  }
+
+  #map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+  #photoDiv {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #myboxLink {
+    height: 70%;
+  }
+
+  #mybox {
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  #myboxDiv {
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.7rem;
+  }
+
+  #pwDiv {
+    font-size: 0.6rem;
+  }
+
+  #footer {
+    margin-top: 1vh;
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.5rem;
+  }
 }
 
-#content {
-  background-color: rgb(252, 242, 242);
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
-  border-radius: 10px;
-  text-align: center;
-  height: 96vh;
-}
+@media (hover: hover) and (pointer: fine) {
+  body {
+    background-color: rgb(241, 214, 208);
+  }
 
-#header {
-  height: 10vh;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 0.5vh;
-  border-radius: 10px;
-  background-color: rgb(252, 242, 242);
-}
+  #content {
+    background-color: rgb(252, 242, 242);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border-radius: 10px;
+    text-align: center;
+    height: 96vh;
+  }
 
-#SLCN {
-  height: 100%;
-}
+  #header {
+    height: 10vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5vh;
+    border-radius: 10px;
+    background-color: rgb(252, 242, 242);
+  }
 
-#infoDiv {
-  font-family: "NotoKR-Medium Medium";
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
+  #SLCN {
+    height: 100%;
+  }
 
-#mapDiv {
-  height: 70vh;
-  margin-bottom: 1vh;
-}
+  #infoDiv {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-#map {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  object-fit: contain;
-  overflow: hidden;
-}
+  #mapDiv {
+    height: 70vh;
+    margin-bottom: 1vh;
+  }
 
-#photoDiv {
-  height: 7vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  #map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    object-fit: contain;
+    overflow: hidden;
+  }
 
-#myboxLink {
-  height: 70%;
-}
+  #photoDiv {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#mybox {
-  height: 100%;
-  object-fit: contain;
-  overflow: hidden;
-  border-radius: 10px;
-}
+  #myboxLink {
+    height: 70%;
+  }
 
-#myboxDiv {
-  justify-content: center;
-  align-items: center;
-  margin-left: 1rem;
-  font-family: "NotoKR-Medium Medium";
-  font-size: 0.7rem;
-}
+  #mybox {
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
-#pwDiv {
-  font-size: 0.6rem;
-}
+  #myboxDiv {
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.7rem;
+  }
 
-#footer {
-  margin-top: 1vh;
-  font-family: "NotoKR-Medium Medium";
-  font-size: 0.5rem;
+  #pwDiv {
+    font-size: 0.6rem;
+  }
+
+  #footer {
+    margin-top: 1vh;
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.5rem;
+  }
 }
