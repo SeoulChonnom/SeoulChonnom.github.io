@@ -1,38 +1,4 @@
 @media (hover: none) and (pointer: coarse) {
-  body {
-    background-color: rgb(241, 214, 208);
-  }
-
-  main {
-    background-color: rgb(252, 242, 242);
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    border-radius: 10px;
-    text-align: center;
-    height: 96vh;
-  }
-
-  #header {
-    height: 10vh;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5vh;
-    border-radius: 10px;
-    background-color: rgb(252, 242, 242);
-  }
-
-  #SLCN {
-    height: 100%;
-  }
-
-  #infoDiv {
-    font-family: "NotoKR-Medium Medium";
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   #mapDiv {
     height: 70vh;
     margin-bottom: 1vh;
@@ -86,25 +52,6 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #header {
-    height: 10vh;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5vh;
-    border-radius: 10px;
-    background-color: rgb(252, 242, 242);
-  }
-
-  #SLCN {
-    height: 100%;
-  }
-
-  #infoDiv {
-    font-family: "NotoKR-Medium Medium";
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   #mapDiv {
     height: 70vh;
     margin-bottom: 1vh;
