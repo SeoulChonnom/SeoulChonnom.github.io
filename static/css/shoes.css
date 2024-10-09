@@ -1,0 +1,88 @@
+@media (hover: none) and (pointer: coarse) {
+  #warningDiv {
+    font-size: 0.7rem;
+    font-family: "NotoKR-Medium Medium";
+  }
+  #allShoesDiv {
+    font-family: "NotoKR-Medium Medium";
+    margin: 1rem;
+  }
+  #brandDiv {
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px rgb(241, 214, 208);
+    display: flex;
+    align-items: center;
+  }
+  #brandImg {
+    margin-right: 0.5rem;
+    height: 3rem;
+  }
+  #shoesDiv {
+    display: flex;
+    align-items: center;
+  }
+  #shoesListDiv {
+  }
+  #shoesImgDiv {
+    width: 200px;
+  }
+  #shoesImg {
+    width: 100%;
+  }
+  #shoes {
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #warningDiv {
+    font-size: 0.7rem;
+    font-family: "NotoKR-Medium Medium";
+  }
+  #allShoesDiv {
+    font-family: "NotoKR-Medium Medium";
+    margin: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  #brandDiv {
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 2px rgb(241, 214, 208);
+    display: flex;
+    align-items: center;
+  }
+  #brandImg {
+    margin-right: 0.5rem;
+    height: 3rem;
+  }
+  #brandInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  #brandDesc {
+    font-size: 0.7rem;
+    color: gray;
+  }
+  #shoesDiv {
+    display: flex;
+    align-items: center;
+  }
+  #shoesListDiv {
+    width: 100%;
+  }
+  #shoesImgDiv {
+    width: 40%;
+  }
+  #shoesImg {
+    width: 100%;
+  }
+  #shoes {
+    width: 30%;
+  }
+  #price {
+    font-size: 0.7rem;
+    width: 30%;
+  }
+}
