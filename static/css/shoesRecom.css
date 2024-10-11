@@ -35,7 +35,6 @@
   }
   .shoesListDiv {
     width: 100%;
-    pointer-events: none;
   }
   .shoesImgDiv {
     width: 40%;
@@ -93,7 +92,6 @@
   }
   .shoesListDiv {
     width: 100%;
-    pointer-events: none;
   }
   .shoesImgDiv {
     width: 40%;
