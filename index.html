@@ -4,30 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Seoul CHONNOM</title>
-    <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
   </head>
   <body>
     <div id="root">
       <main>
+        <div id="header">
+          <image id="SLCN" src="../static/img/SLCN.png"></image>
+        </div>
         <div id="content">
-          <div id="header">
-            <image id="SLCN" src="./static/img/SLCN.png"></image>
-          </div>
-          <div id="infoDiv">서울 촌놈 나들이 경로 😎</div>
-          <div id="mapDiv">
-            <image id="map" src="./static/img/map_20240929.png"></image>
-          </div>
-          <div id="photoDiv">
-            <a id="myboxLink" href="http://naver.me/GTnQ1tj1" target="_blank">
-              <img id="mybox" src="./static/img/mybox.png" />
-            </a>
-            <div id="myboxDiv">
-              사진은 드라이브에서 📷
-              <div id="pwDiv">암호 🔒 : 입사일</div>
+          <div id="infoDiv">서울 촌놈의 나들이 기록 📷</div>
+          <div id="mapListDiv">
+            <div class="mapDiv" onclick="location.href='./map/20240929.html'">
+              <div class="mapImgDiv">
+                <image class="map" src="../static/img/map_20240929.png"></image>
+              </div>
+              <div class="mapDesc">
+                2024.09.29 Sun<br />
+                부암동 나들이
+              </div>
+            </div>
+            <div class="mapDiv" onclick="location.href='./map/20241005.html'">
+              <div class="mapImgDiv">
+                <image class="map" src="../static/img/map_20241005.png"></image>
+              </div>
+              <div class="mapDesc">
+                2024.10.05 Sat<br />
+                강북 나들이
+              </div>
             </div>
           </div>
-          <div id="footer">© Seoul CHONNOM</div>
+          <div id="shoesDesc" onclick="location.href='./shoesRecom.html'">
+            월 평균 10000보의 주인공의 신발 추천이 궁금하다면???<br />
+            여길 클릭해봐 😆
+          </div>
         </div>
+        <div id="footer">© Seoul CHONNOM</div>
       </main>
     </div>
   </body>
