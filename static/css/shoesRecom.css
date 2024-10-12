@@ -5,7 +5,7 @@
   }
   #allShoesDiv {
     font-family: "NotoKR-Medium Medium";
-    margin: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
     width: 100%;
   }
@@ -32,6 +32,7 @@
   .shoesDiv {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .shoesListDiv {
     width: 100%;
@@ -67,7 +68,7 @@
   }
   #allShoesDiv {
     font-family: "NotoKR-Medium Medium";
-    margin: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
     width: 100%;
   }
@@ -94,6 +95,12 @@
   .shoesDiv {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(241, 214, 208);
+  }
+  #nb530Div,
+  #nikeZoomBomero5Div {
+    border-bottom: hidden;
   }
   .shoesListDiv {
     width: 100%;
