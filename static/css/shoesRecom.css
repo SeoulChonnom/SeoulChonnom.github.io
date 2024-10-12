@@ -33,6 +33,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-bottom: solid 1px rgb(241, 214, 208);
+  }
+  #nb530Div,
+  #nikeZoomBomero5Div {
+    border-bottom: hidden;
   }
   .shoesListDiv {
     width: 100%;
