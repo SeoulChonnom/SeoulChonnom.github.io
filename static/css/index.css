@@ -1,20 +1,50 @@
 @media (hover: none) and (pointer: coarse) {
+  #mapListDiv {
+    display: flex;
+    flex-direction: column;
+  }
   .mapDiv {
-    height: 70vh;
-    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 10px;
+    border: solid 1px rgb(241, 214, 208);
+    cursor: pointer;
+  }
+  .mapDiv:hover {
+    background-color: rgb(241, 214, 208);
+  }
+  .mapImgDiv {
+    width: 40%;
+    margin: 0.3rem;
+    pointer-events: none;
+  }
+  .map {
+    width: 100%;
+    pointer-events: none;
   }
 
-  .map {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    object-fit: contain;
-    overflow: hidden;
+  .mapDesc {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.8rem;
+    margin: auto;
+    pointer-events: none;
   }
+
+  #shoesDesc {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #shoesDesc:hover {
+    background-color: rgb(241, 214, 208);
+    font-size: 0.82rem;
+  }
+
   #footer {
     margin-top: 1vh;
   }
