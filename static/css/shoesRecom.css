@@ -53,6 +53,11 @@
     width: 30%;
     pointer-events: none;
   }
+  #shoesWarningDiv {
+    font-size: 0.7rem;
+    font-family: "NotoKR-Medium Medium";
+    margin-bottom: 0.7rem;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -109,5 +114,10 @@
     font-size: 0.7rem;
     width: 30%;
     pointer-events: none;
+  }
+  #shoesWarningDiv {
+    font-size: 0.7rem;
+    font-family: "NotoKR-Medium Medium";
+    margin-bottom: 0.7rem;
   }
 }
