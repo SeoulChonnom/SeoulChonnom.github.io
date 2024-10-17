@@ -7,7 +7,7 @@
     background-color: rgb(241, 214, 208);
   }
 
-  main {
+  #mainDiv {
     background-color: rgb(252, 242, 242);
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -48,7 +48,7 @@
     background-color: rgb(241, 214, 208);
   }
 
-  main {
+  #mainDiv {
     background-color: rgb(252, 242, 242);
     padding-top: 1vh;
     padding-bottom: 1vh;

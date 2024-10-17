@@ -1,21 +1,17 @@
 <template>
-  <main>
+  <div id="mainDiv">
     <div id="header">
       <img id="SLCN" src="./assets/img/SLCN.png" />
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <router-view></router-view>
     <div id="footer">© Seoul CHONNOM</div>
-  </main>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
 
