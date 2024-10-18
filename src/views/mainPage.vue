@@ -1,6 +1,6 @@
 <template>
   <div id="content">
-    <div id="infoDiv">서울 촌놈의 나들이 기록 📷</div>
+    <div id="infoDiv">서울 촌놈 나들이 기록 📷</div>
     <div id="mapListDiv">
       <tripList v-for="trip in trips" :key="trip.date" v-bind:trip="trip" />
     </div>
