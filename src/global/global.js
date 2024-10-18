@@ -1,4 +1,4 @@
-export default {
+export const globalTrip = {
   trips: [
     {
       date: "20240929",

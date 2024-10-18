@@ -13,7 +13,7 @@
   
 <script>
 import tripList from "@/components/trip/tripList.vue";
-import global from "@/global/global.js";
+import { globalTrip } from "@/global/global.js";
 
 export default {
   name: "mainPage",
@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      trips: global.trips,
+      trips: globalTrip.trips,
     };
   },
   components: {
