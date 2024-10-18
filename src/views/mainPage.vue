@@ -13,6 +13,7 @@
   
 <script>
 import tripList from "@/components/trip/tripList.vue";
+import global from "@/global/global.js";
 
 export default {
   name: "mainPage",
@@ -26,20 +27,7 @@ export default {
   },
   data() {
     return {
-      trips: [
-        {
-          date: "20240929",
-          desc1: "2024.09.29",
-          desc2: "부암동 나들이",
-          img: require("@/assets/img/map_20240929.png"),
-        },
-        {
-          date: "20241005",
-          desc1: "2024.10.05",
-          desc2: "강북 나들이",
-          img: require("@/assets/img/map_20241005.png"),
-        },
-      ],
+      trips: global.trips,
     };
   },
   components: {

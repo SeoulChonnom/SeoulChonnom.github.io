@@ -1,7 +1,7 @@
 <template>
   <div class="mapDiv" @click="onClickMap()">
     <div class="mapImgDiv">
-      <img class="map" :src="trip.img" />
+      <img class="map" :src="trip.map" />
     </div>
     <div class="mapDesc">
       {{ trip.desc1 }}<br />
@@ -16,11 +16,11 @@ export default {
   props: { trip: Object },
   methods: {
     onClickMap() {
-      this.$router.push("/map" + this.trip.date);
+      this.$router.push("/map/" + this.trip.date);
     },
   },
   data() {
-    return;
+    return {};
   },
 };
 </script>
