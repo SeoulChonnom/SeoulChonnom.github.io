@@ -1,7 +1,7 @@
 <template>
   <div id="mainDiv">
     <div id="header">
-      <img id="SLCN" src="./assets/img/SLCN.png" />
+      <img id="SLCN" src="./assets/img/SLCN.png" @click="onClickSLCN()" />
     </div>
     <router-view></router-view>
     <div id="footer">© Seoul CHONNOM</div>
@@ -12,6 +12,11 @@
 export default {
   name: "App",
   components: {},
+  methods: {
+    onClickSLCN() {
+      this.$router.push("/");
+    },
+  },
 };
 </script>
 
