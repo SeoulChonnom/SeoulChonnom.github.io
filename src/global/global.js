@@ -21,4 +21,8 @@ export const globalTrip = {
     const result = this.trips.find((item) => item.date === date);
     return result ? result : undefined;
   },
+  getIsValid(date) {
+    const result = this.trips.find((item) => item.date === date);
+    return result ? 1 : 0;
+  },
 };
