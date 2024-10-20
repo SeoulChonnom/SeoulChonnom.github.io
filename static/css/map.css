@@ -4,7 +4,7 @@
     margin-bottom: 1vh;
   }
 
-  #map {
+  .map {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -57,7 +57,7 @@
     margin-bottom: 1vh;
   }
 
-  #map {
+  .map {
     display: block;
     margin-left: auto;
     margin-right: auto;
