@@ -20,7 +20,7 @@
             <image class="map" id="map2" style="display: none" src="../static/img/map_20241013_2.png"></image>
           </div>
           <div id="move">
-            <button id="moveButton" onclick="moveButtonClick()">다음</button>
+            <button id="moveButton" onclick="moveButtonClick()">합정 경로도 궁금하다면?</button>
           </div>
           <div id="photoDiv">
             <a id="myboxLink" href="http://naver.me/xLWf4P5G" target="_blank">
@@ -39,12 +39,15 @@
       function moveButtonClick() {
         let map1 = document.getElementById("map1");
         let map2 = document.getElementById("map2");
+        let button = document.getElementById("moveButton");
         if (map2.style.display == "none") {
           map1.style.display = "none";
           map2.style.display = "block";
+          button.innerText = "파주 경로도 궁금하다면?";
         } else {
           map1.style.display = "block";
           map2.style.display = "none";
+          button.innerText = "합정 경로도 궁금하다면?";
         }
       }
     </script>

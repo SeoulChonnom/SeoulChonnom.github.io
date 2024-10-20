@@ -76,6 +76,15 @@
     align-items: center;
   }
 
+  #moveButton {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    background-color: rgb(241, 214, 208);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
   #myboxLink {
     height: 70%;
   }
