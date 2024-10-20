@@ -23,6 +23,15 @@
     align-items: center;
   }
 
+  #moveButton {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    background-color: rgb(241, 214, 208);
+    border: none;
+    border-radius: 10px;
+  }
+
   #myboxLink {
     height: 70%;
   }
@@ -77,12 +86,12 @@
   }
 
   #moveButton {
+    font-family: "NotoKR-Medium Medium";
     font-size: 0.7rem;
     padding: 0.3rem;
     background-color: rgb(241, 214, 208);
     border: none;
     border-radius: 10px;
-    font-weight: bold;
   }
 
   #myboxLink {
