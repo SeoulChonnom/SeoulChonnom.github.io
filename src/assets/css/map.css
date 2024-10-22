@@ -4,7 +4,7 @@
     margin-bottom: 1vh;
   }
 
-  #map {
+  .map {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,6 +21,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #moveButton {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    background-color: rgb(241, 214, 208);
+    border: none;
+    border-radius: 10px;
   }
 
   #myboxLink {
@@ -74,6 +83,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #moveButton {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    background-color: rgb(241, 214, 208);
+    border: none;
+    border-radius: 10px;
   }
 
   #myboxLink {
