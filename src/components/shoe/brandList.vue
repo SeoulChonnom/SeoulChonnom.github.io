@@ -6,6 +6,7 @@
       <div class="brandDesc">{{ brand.desc }}</div>
     </div>
   </div>
+  <div class="shoesListDiv"></div>
 </template>
   
 <script>
