@@ -9,23 +9,23 @@
     box-sizing: border-box;
     width: 100%;
   }
-  .brandDiv {
+  .brandListDiv {
     margin-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: solid 2px rgb(241, 214, 208);
     display: flex;
     align-items: center;
   }
-  .brandImg {
+  .brandListImg {
     margin-right: 0.5rem;
     height: 3rem;
   }
-  .brandInfo {
+  .brandListInfo {
     display: flex;
     flex-direction: column;
     align-items: baseline;
   }
-  .brandDesc {
+  .brandListDesc {
     font-size: 0.7rem;
     color: gray;
   }
@@ -77,23 +77,23 @@
     box-sizing: border-box;
     width: 100%;
   }
-  .brandDiv {
+  .brandListDiv {
     margin-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: solid 2px rgb(241, 214, 208);
     display: flex;
     align-items: center;
   }
-  .brandImg {
+  .brandListImg {
     margin-right: 0.5rem;
     height: 3rem;
   }
-  .brandInfo {
+  .brandListInfo {
     display: flex;
     flex-direction: column;
     align-items: baseline;
   }
-  .brandDesc {
+  .brandListDesc {
     font-size: 0.7rem;
     color: gray;
   }

@@ -1,9 +1,9 @@
 <template>
-  <div class="brandDiv" v-bind:id="brand.divId">
-    <img class="brandImg" :src="this.brand.img" />
-    <div class="brandInfo">
-      <div class="brandName">{{ brand.name }}</div>
-      <div class="brandDesc">{{ brand.desc }}</div>
+  <div class="brandListDiv" v-bind:id="brand.divId">
+    <img class="brandListImg" :src="this.brand.img" />
+    <div class="brandListInfo">
+      <div class="brandListName">{{ brand.name }}</div>
+      <div class="brandListDesc">{{ brand.desc }}</div>
     </div>
   </div>
   <div class="shoesListDiv">

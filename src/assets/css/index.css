@@ -32,7 +32,7 @@
     pointer-events: none;
   }
 
-  #shoesDesc {
+  #shoesRecomButtonDiv {
     font-family: "NotoKR-Medium Medium";
     font-size: 0.8rem;
     margin: 0.5rem;
@@ -40,7 +40,7 @@
     border-radius: 10px;
   }
 
-  #shoesDesc:hover {
+  #shoesRecomButtonDiv:hover {
     background-color: rgb(241, 214, 208);
     font-size: 0.82rem;
   }
@@ -84,7 +84,7 @@
     pointer-events: none;
   }
 
-  #shoesDesc {
+  #shoesRecomButtonDiv {
     font-family: "NotoKR-Medium Medium";
     font-size: 0.8rem;
     margin: 0.5rem;
@@ -92,7 +92,7 @@
     border-radius: 10px;
   }
 
-  #shoesDesc:hover {
+  #shoesRecomButtonDiv:hover {
     background-color: rgb(241, 214, 208);
     font-size: 0.82rem;
   }
