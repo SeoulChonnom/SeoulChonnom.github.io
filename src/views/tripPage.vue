@@ -2,7 +2,13 @@
   <div id="content">
     <div id="infoDiv">서울 촌놈 나들이 경로 😎</div>
     <div id="mapDiv">
-      <img id="map" :src="getMap1()" />
+      <img v-if="showMap" class="map" id="map1" :src="getMap1()" />
+      <img v-if="!showMap" class="map" id="map2" :src="getMap2()" />
+    </div>
+    <div v-if="getMap2()" id="move">
+      <button id="moveButton" @click="moveButtonClick()">
+        {{ getButtonText1() }}
+      </button>
     </div>
     <div id="photoDiv">
       <a id="myboxLink" href="http://naver.me/GTnQ1tj1" target="_blank">
@@ -23,6 +29,7 @@ export default {
   name: "tripPage",
   data() {
     return {
+      showMap: true,
       globalTrip,
       date: this.$route.params.date,
     };
@@ -33,6 +40,20 @@ export default {
     },
     getDrive() {
       return globalTrip.trips.find((item) => item.date === this.date).drive;
+    },
+    getMap2() {
+      return globalTrip.trips.find((item) => item.date === this.date).map2;
+    },
+    getButtonText1() {
+      return globalTrip.trips.find((item) => item.date === this.date)
+        .buttonText1;
+    },
+    getButtonText2() {
+      return globalTrip.trips.find((item) => item.date === this.date)
+        .buttonText2;
+    },
+    moveButtonClick() {
+      this.showMap = !this.showMap;
     },
   },
   onMounted() {
