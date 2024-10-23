@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import mainPage from "@/views/mainPage.vue";
 import tripPage from "@/views/tripPage.vue";
 import shoesRecom from "@/views/shoesRecom.vue";
+import shoesInfo from "@/views/shoesInfo.vue";
 
 const routes = [
   {
@@ -19,6 +20,11 @@ const routes = [
     path: "/shoesRecom",
     name: "shoesRecom",
     component: shoesRecom,
+  },
+  {
+    path: "/:brand/:shoesName",
+    name: "shoesInfo",
+    component: shoesInfo,
   },
 ]; //라우팅 패스, 컴포넌트 등 정의
 
