@@ -4,7 +4,6 @@
     <div id="warningDiv">사진을 클릭하면 링크로 이동합니다</div>
     <div class="shoesOverView">
       <div id="shoesImgDiv">
-        <!-- <img id="shoesImg" src="@/assets/img/shoes/AsicsJog100.png" /> -->
         <img id="shoesImg" :src="getShoesInfo().img" />
       </div>
       <div class="brandDiv" v-bind:id="getBrandDivId()">
@@ -16,10 +15,10 @@
     </div>
     <div id="shoesDesc">
       <div id="shoesInfo">
-        최근 MZ들 사이에서 유행하는 아식스<br />
-        특정 컬러는 구하기 어려운...<br />
-        가격도 저렴해 부담이 덜하다!<br />
-        쿠션감은 덜하지만 꽉잡아주는 느낌이 있다는 신발
+        {{ getShoesInfo().shoesInfo1 }}<br />
+        {{ getShoesInfo().shoesInfo2 }}<br />
+        {{ getShoesInfo().shoesInfo3 }}<br />
+        {{ getShoesInfo().shoesInfo4 }}
       </div>
     </div>
     <div id="reviewInfoDiv">여러 착용 샷</div>
@@ -29,19 +28,18 @@
           class="reviewImgDiv"
           onclick="window.open('https://kream.co.kr/social/posts/1036186')"
         >
-          <img id="reviewImg" src="@/assets/img/shoes/AsicsJogReview.png" />
+          <img id="reviewImg" :src="getShoesInfo().reviewImg1" />
         </div>
-        <div class="reviewImgDesc">일반인의 코디</div>
+        <div class="reviewImgDesc">{{ getShoesInfo().reviewDesc1 }}</div>
       </div>
       <div class="reviewDiv">
         <div
           class="reviewImgDiv"
           onclick="window.open('https://www.youtube.com/watch?v=N0i-OXXk930&list=PLgbB1gJhmG7A7LmzZmNz8KaLmiO1jsrLD&index=2')"
         >
-          <!--https://blog.naver.com/joeundayy/223236998618-->
-          <img id="reviewImg" src="@/assets/img/shoes/AsicsJogReview2.png" />
+          <img id="reviewImg" :src="getShoesInfo().reviewImg2" />
         </div>
-        <div class="reviewImgDesc">블로거의 후기..</div>
+        <div class="reviewImgDesc">{{ getShoesInfo().reviewDesc2 }}</div>
       </div>
     </div>
   </div>
