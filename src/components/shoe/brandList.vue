@@ -11,6 +11,7 @@
       v-for="shoe in brand.shoes"
       :key="shoe.id"
       v-bind:shoe="shoe"
+      @shoesDivClick="onClickShoesList"
     ></shoesList>
   </div>
 </template>
@@ -21,7 +22,11 @@ import shoesList from "./shoesList.vue";
 export default {
   name: "brandList",
   props: { brand: Object },
-  methods: {},
+  methods: {
+    onClickShoesList(shoe) {
+      this.$router.push("/" + this.brand.brandId + "/" + shoe.shoesId);
+    },
+  },
   data() {
     return {};
   },

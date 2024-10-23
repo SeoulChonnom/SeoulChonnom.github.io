@@ -1,5 +1,5 @@
 <template>
-  <div class="shoesDiv" v-bind:id="shoe.divId">
+  <div class="shoesDiv" v-bind:id="shoe.divId" @click="shoesClick">
     <div class="shoesImgDiv">
       <img class="shoesImg" :src="shoe.img" />
     </div>
@@ -12,7 +12,11 @@
 export default {
   name: "shoesList",
   props: { shoe: Object },
-  methods: {},
+  methods: {
+    shoesClick() {
+      this.$emit("shoesDivClick", this.shoe);
+    },
+  },
   data() {
     return {};
   },
