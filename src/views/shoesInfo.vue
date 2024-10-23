@@ -12,6 +12,22 @@
           <div class="brandDesc">{{ getShoesInfo().desc }}</div>
         </div>
       </div>
+      <div v-if="getShoesInfo().videoDesc" class="mjVideoDiv">
+        <div @click="windowOpen(getShoesInfo().videoLink)">
+          {{ getShoesInfo().videoDesc }}
+        </div>
+        <video
+          v-if="getShoesInfo().video"
+          :src="getShoesInfo().video"
+          id="mjVideo"
+          controls
+          preload="auto"
+          muted
+          autoplay
+          loop
+          playsinline
+        />
+      </div>
     </div>
     <div id="shoesDesc">
       <div id="shoesInfo">
@@ -26,7 +42,7 @@
       <div class="reviewDiv">
         <div
           class="reviewImgDiv"
-          onclick="window.open('https://kream.co.kr/social/posts/1036186')"
+          @click="windowOpen(getShoesInfo().reviewLink1)"
         >
           <img id="reviewImg" :src="getShoesInfo().reviewImg1" />
         </div>
@@ -35,7 +51,7 @@
       <div class="reviewDiv">
         <div
           class="reviewImgDiv"
-          onclick="window.open('https://www.youtube.com/watch?v=N0i-OXXk930&list=PLgbB1gJhmG7A7LmzZmNz8KaLmiO1jsrLD&index=2')"
+          @click="windowOpen(getShoesInfo().reviewLink2)"
         >
           <img id="reviewImg" :src="getShoesInfo().reviewImg2" />
         </div>
@@ -68,7 +84,10 @@ export default {
         .shoes.find((item) => item.shoesId === this.shoesName);
     },
     getBrandDivId() {
-      return this.getShoesBrand().brandId + "BrandDiv";
+      return this.getShoesBrand().brandId + "BrandsDiv";
+    },
+    windowOpen(link) {
+      window.open(link);
     },
   },
 };
