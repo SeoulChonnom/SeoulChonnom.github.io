@@ -121,8 +121,7 @@ export const globalShoes = {
           shoesInfo2: "이후 꾸준히 인기를 유지중~",
           shoesInfo3: "다른 추천 신발들에 비해 덜 유명하다는게 장점!",
           shoesInfo4: "",
-          reviewImg1:
-            "https://mblogthumb-phinf.pstatic.net/MjAyNDA1MTRfMjgy/MDAxNzE1NjcwNTQ3MDgx.V4PwWiMmhcPOQLiXxq2R4HTmSYMN0c7hwfRj5ZL09ZUg.rDGlsruOaKD5WH_3QjCHTsGAjAJM-LlZNjq331ffmL8g.PNG/capture-20240514-160043.png?type=w800",
+          reviewImg1: "https://dnvefa72aowie.cloudfront.net/origin/article/202009/918EB231DC1C13D9A631934595073A04DB853A9437520A01200ADF1720932AE8.jpg?f=webp&q=95&s=1440x1440&t=inside",
           reviewDesc1: "이효리가 신었던 그 신발",
           reviewLink1: "https://www.youtube.com/watch?v=8RO5p0Y5roo",
           reviewImg2: "https://img.croket.co.kr/item/contents/3d399398a6fbca1a7e8103cb70014c09.jpeg",
@@ -173,7 +172,7 @@ export const globalShoes = {
           reviewDesc1: "하트시그널3 김지영의 신발",
           reviewLink1: "https://www.instagram.com/p/C7d2LjAJKMU/?img_index=4",
           reviewImg2:
-            "https://mblogthumb-phinf.pstatic.net/MjAyNDA2MThfMTAy/MDAxNzE4NzEzMTcwNDg0.5oz-sgkEOpRtSN6dA2C9keHN_zefcJedCdM767AKxjwg.AoywvLB9ICVCxEBMW-Ku0gpwYklB5_nat_b64knB3rMg.JPEG/1%EB%B0%95_2%EC%9D%BC_%EB%8F%84%EC%BF%84,_%EC%95%8C%EC%B0%BC%EB%8B%A4.%ED%95%98%EB%A3%A8%EC%97%90_16000%EB%B3%B4_%EA%B1%B7%EA%B3%A0_%EC%95%BC%EB%AC%B4%EC%A7%80%EA%B2%8C_%EB%A8%B9%EA%B3%A0,_%EB%B6%93%EA%B3%A0,%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EC%97%B4%EC%8B%AC%ED%9E%88_%EC%B0%8D%EC%97%88%EB%8B%A4_(%EB%82%B4%EA%B0%80_%EC%B0%8D%EC%96%B4%EC%A3%BC%EB%8A%94_%EC%B9%9C%EA%B5%AC_%EB%A7%88%EC%A7%80%EB%A7%89%EC%82%AC%EC%A7%84_).jpg?type=w800",
+            "https://mblogthumb-phinf.pstatic.net/MjAyMzA0MjVfMjE3/MDAxNjgyNDIzNDkwMjYx.R_3tFuDW6YGSCNTISZ-oTX_ZDGxKBuRz_5LQhW15cXog.QNvPHt76GcOZsGaRZP4P_VOLG24v6At2cWIemxqUmhsg.JPEG.jhcjjang1696/%EB%82%98%EC%9D%B4%ED%82%A4_%EC%A4%8C_%EB%B3%B4%EB%A9%94%EB%A1%9C_5_%EC%98%B7_%EC%9E%98%EC%9E%85%EB%8A%94_%EC%97%AC%EC%9E%90_%EC%97%B0%EC%98%88%EC%9D%B8_%ED%8C%A8%EC%85%98_(7).jpg?type=w800",
           reviewDesc2: "이런 새로운 시도는...?",
           reviewLink2: "https://blog.naver.com/jhcjjang1696/223084978636",
         },
