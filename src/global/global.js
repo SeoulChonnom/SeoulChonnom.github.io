@@ -28,7 +28,7 @@ export const globalTrip = {
       map2: require("@/assets/img/map_20241013_2.png"),
       buttonText1: "파주 경로도 궁금하다면?",
       buttonText2: "합정 경로도 궁금하다면?",
-      drive: "http://naver.me/5UEiY0Vg",
+      drive: "http://naver.me/xLWf4P5G",
     },
   ],
   getTrip(date) {
