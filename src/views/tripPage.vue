@@ -11,7 +11,7 @@
       </button>
     </div>
     <div id="photoDiv">
-      <a id="myboxLink" href="http://naver.me/GTnQ1tj1" target="_blank">
+      <a id="myboxLink" v-bind:href="getDrive()" target="_blank">
         <img id="mybox" src="@/assets/img/mybox.png" />
       </a>
       <div id="myboxDiv">
