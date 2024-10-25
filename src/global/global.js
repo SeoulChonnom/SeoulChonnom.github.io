@@ -33,6 +33,17 @@ export const globalTrip = {
       buttonText2: "합정 경로도 궁금하다면?",
       drive: "http://naver.me/xLWf4P5G",
     },
+    {
+      date: "20241020",
+      desc1: "2024.10.20",
+      desc2: "다산로 나들이",
+      logo: require("@/assets/img/logo/20241020.png"),
+      map: require("@/assets/img/map_20241020.png"),
+      map2: undefined,
+      buttonText1: undefined,
+      buttonText2: undefined,
+      drive: "http://naver.me/G380jI5p",
+    },
   ],
   getTrip(date) {
     const result = this.trips.find((item) => item.date === date);
