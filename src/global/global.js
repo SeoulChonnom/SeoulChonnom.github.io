@@ -44,6 +44,17 @@ export const globalTrip = {
       buttonText2: undefined,
       drive: "http://naver.me/G380jI5p",
     },
+    {
+      date: "20241026",
+      desc1: "2024.10.26",
+      desc2: "용산 나들이",
+      logo: require("@/assets/img/logo/20241026.png"),
+      map: require("@/assets/img/map_20241026_1.png"),
+      map2: undefined,
+      buttonText1: undefined,
+      buttonText2: undefined,
+      drive: "http://naver.me/5UEzur2F",
+    },
   ],
   getTrip(date) {
     const result = this.trips.find((item) => item.date === date);
