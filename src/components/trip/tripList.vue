@@ -1,7 +1,7 @@
 <template>
   <div class="mapDiv" @click="onClickMap()">
     <div class="mapImgDiv">
-      <img class="map" :src="trip.map" />
+      <img class="map" :src="trip.logo" />
     </div>
     <div class="mapDesc">
       {{ trip.desc1 }}<br />
