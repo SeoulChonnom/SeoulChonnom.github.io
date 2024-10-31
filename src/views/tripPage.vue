@@ -7,7 +7,7 @@
     </div>
     <div v-if="getMap2()" id="move">
       <button id="moveButton" @click="moveButtonClick()">
-        {{ getButtonText1() }}
+        {{ getMoveButtonText() }}
       </button>
     </div>
     <div id="photoDiv">
@@ -51,6 +51,12 @@ export default {
     getButtonText2() {
       return globalTrip.trips.find((item) => item.date === this.date)
         .buttonText2;
+    },
+    getMoveButtonText() {
+      if (this.showMap) {
+        return this.getButtonText1();
+      }
+      return this.getButtonText2();
     },
     moveButtonClick() {
       this.showMap = !this.showMap;
