@@ -62,8 +62,8 @@
 
 @media (hover: hover) and (pointer: fine) {
   #mapDiv {
-    height: 70vh;
-    margin-bottom: 1vh;
+    height: 700px;
+    margin-bottom: 10px;
   }
 
   .map {
@@ -79,7 +79,7 @@
   }
 
   #photoDiv {
-    height: 7vh;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +118,6 @@
   }
 
   #footer {
-    margin-top: 1vh;
+    margin-top: 10px;
   }
 }
