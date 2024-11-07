@@ -55,6 +55,17 @@ export const globalTrip = {
       buttonText2: "아이디어와는 너무 다른 경로..",
       drive: "http://naver.me/5UEzur2F",
     },
+    {
+      date: "20241102",
+      desc1: "2024.11.02",
+      desc2: "서래마을, 낙산공원 나들이",
+      logo: require("@/assets/img/logo/20241102_1.png"),
+      map: require("@/assets/img/map_20241102_1.png"),
+      map2: require("@/assets/img/map_20241102_2.png"),
+      buttonText1: "자율학습 경로도 궁금해~",
+      buttonText2: "기존 코스도 다시 보여줘~",
+      drive: "http://naver.me/5Kb16v4r",
+    },
   ],
   getTrip(date) {
     const result = this.trips.find((item) => item.date === date);
