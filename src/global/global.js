@@ -143,7 +143,7 @@ export const globalTrip = {
       map2: undefined,
       buttonText1: undefined,
       buttonText2: undefined,
-      drive: "http://naver.me/5Kb16v4r",
+      drive: "https://map.naver.com/p?c=11.00,0,0,0,dh", // 일정 이후 드라이브 링크 변경, 질문, 경로 업데이트 필요
       title: "과연,,,\n다음 목적지는 어디일까요~",
       radio: {
         v1: "서울",
