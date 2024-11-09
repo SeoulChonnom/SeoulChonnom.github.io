@@ -66,7 +66,16 @@ export default {
 </script>
 
 <style>
-div:where(.swal2-container) {
+div:where(.swal2-container) .swal2-radio label {
   font-family: "NotoKR-Medium Medium";
+}
+div:where(.swal2-container) .swal2-html-container {
+  font-family: "NotoKR-Medium Medium";
+}
+@media (hover: none) and (pointer: coarse) {
+  div:where(.swal2-container) .swal2-radio label {
+    font-family: "NotoKR-Medium Medium";
+    font-size: 1rem;
+  }
 }
 </style>
