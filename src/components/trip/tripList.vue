@@ -64,3 +64,9 @@ export default {
   },
 };
 </script>
+
+<style>
+div:where(.swal2-container) {
+  font-family: "NotoKR-Medium Medium";
+}
+</style>
