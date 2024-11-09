@@ -11,12 +11,52 @@
 </template>
 
 <script>
+import swal from "sweetalert2";
+
 export default {
   name: "mapList",
   props: { trip: Object },
   methods: {
-    onClickMap() {
-      this.$router.push("/map/" + this.trip.date);
+    async onClickMap() {
+      const inputOptions = new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(this.trip.radio);
+        }, 500);
+      });
+      const { value: ans } = await swal.fire({
+        icon: "question",
+        title: this.trip.title,
+        input: "radio",
+        inputOptions,
+        inputValidator: (value) => {
+          if (!value) {
+            return "정답을 선택해주세요!";
+          }
+        },
+      });
+      if (ans === this.trip.answer) {
+        swal
+          .fire({
+            icon: "success",
+            title: this.trip.answerTitle,
+            text: this.trip.answerText,
+            timer: 1000,
+            timerProgressBar: true,
+            showConfirmButton: false,
+          })
+          .then(() => {
+            this.$router.push("/map/" + this.trip.date);
+          });
+      } else {
+        swal.fire({
+          icon: "error",
+          title: this.trip.errorTitle,
+          text: this.trip.errorText,
+          timer: 1000,
+          timerProgressBar: true,
+          showConfirmButton: false,
+        });
+      }
     },
   },
   data() {
