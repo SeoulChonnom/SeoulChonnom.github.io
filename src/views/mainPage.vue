@@ -5,8 +5,7 @@
       <tripList v-for="trip in trips" :key="trip.date" v-bind:trip="trip" />
     </div>
     <div id="shoesRecomButtonDiv" @click="onclickShoes">
-      월 평균 10000보의 주인공의 신발 추천이 궁금하다면???<br />
-      여길 클릭해봐 😆
+      서울 촌놈의 신발 추천~👟
     </div>
   </div>
 </template>
