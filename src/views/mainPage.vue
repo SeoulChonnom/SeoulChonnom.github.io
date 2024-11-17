@@ -4,7 +4,10 @@
     <div id="mapListDiv">
       <tripList v-for="trip in trips" :key="trip.date" v-bind:trip="trip" />
     </div>
-    <div id="shoesRecomButtonDiv" @click="onclickShoes">
+    <div class="fixButtonDiv" id="ayoFilmButtonDiv" @click="onclickFilm">
+      Choi's Film Art~🎞
+    </div>
+    <div class="fixButtonDiv" id="shoesRecomButtonDiv" @click="onclickShoes">
       서울 촌놈의 신발 추천~👟
     </div>
   </div>
@@ -22,6 +25,9 @@ export default {
     },
     onclickShoes() {
       this.$router.push("shoesRecom");
+    },
+    onclickFilm() {
+      window.open("http://naver.me/52RjLNuT");
     },
   },
   data() {
