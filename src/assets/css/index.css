@@ -50,12 +50,16 @@
   width: 20px;
 }
 
-#ayoFilmButtonDiv {
+.fix2 {
   bottom: 60px;
 }
 
-#shoesRecomButtonDiv {
+.fix1 {
   bottom: 15px;
+}
+
+.fixNone {
+  display: none;
 }
 
 #tobecontinueDiv {
@@ -92,6 +96,6 @@
   }
 
   #footer {
-    margin-top: 20h;
+    margin-top: 20px;
   }
 }
