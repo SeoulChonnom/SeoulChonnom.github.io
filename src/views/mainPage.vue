@@ -4,11 +4,14 @@
     <div id="mapListDiv">
       <tripList v-for="trip in trips" :key="trip.date" v-bind:trip="trip" />
     </div>
+    <div id="tobecontinueDiv">서울 촌놈 나들이는 계속 될 예정....🥳</div>
     <div class="fixButtonDiv" id="ayoFilmButtonDiv" @click="onclickFilm">
       Choi's Film Art~🎞
+      <div class="fixButtonCloseDiv" id="ayoFilmButtonCloseDiv">X</div>
     </div>
     <div class="fixButtonDiv" id="shoesRecomButtonDiv" @click="onclickShoes">
       서울 촌놈의 신발 추천~👟
+      <div class="fixButtonCloseDiv" id="shoesRecomButtonCloseDiv">X</div>
     </div>
   </div>
 </template>
