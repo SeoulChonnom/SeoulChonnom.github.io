@@ -167,6 +167,28 @@ export const globalTrip = {
       // errorTitle: "출발 말고....",
       // errorText: "집에 가고 싶으신건가..?",
     },
+    {
+      date: "20241123",
+      desc1: "2024.11.23",
+      desc2: "공주 나들이",
+      logo: require("@/assets/img/logo/20241123.png"),
+      map: require("@/assets/img/map_20241123.png"),
+      map2: undefined,
+      buttonText1: undefined,
+      buttonText2: undefined,
+      drive: "http://naver.me/GoD1Gqnz",
+      title: "고마열차에서 내려서\n원래 어디를 가려했었을까요~?",
+      radio: {
+        v1: "금강교",
+        v2: "공산성",
+        v3: "중동성당",
+      },
+      answer: "v2",
+      answerTitle: "5시까지 입장 제한이던...😥",
+      answerText: "근데 찾아보니까 그냥 들어가더라...",
+      errorTitle: "다 다녀온 곳이라 헷갈리나보다~😯",
+      errorText: "5시에 문 닫던 곳 있잖아~",
+    },
   ],
   getTrip(date) {
     const result = this.trips.find((item) => item.date === date);
