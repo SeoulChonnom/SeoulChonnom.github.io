@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router';
+import swal from 'sweetalert2';
 import type { Trip } from '@/global/trip';
 
 interface tripListProps {
@@ -8,9 +9,49 @@ interface tripListProps {
 function TripList({ trip }: tripListProps) {
   const navigate = useNavigate();
 
-  const onClickMap = () => {
+  const onClickMap = async () => {
     const date = trip?.date;
-    navigate(`/map/${date}`);
+
+    const inputOptions = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(trip.radio);
+      }, 500);
+    });
+
+    const { value: ans } = await swal.fire({
+      icon: 'question',
+      title: trip.title,
+      input: 'radio',
+      inputOptions,
+      inputValidator: (value) => {
+        if (!value) {
+          return '정답을 선택해주세요!';
+        }
+      },
+    });
+    if (ans === trip.answer) {
+      swal
+        .fire({
+          icon: 'success',
+          title: trip.answerTitle,
+          text: trip.answerText,
+          timer: 1000,
+          timerProgressBar: true,
+          showConfirmButton: false,
+        })
+        .then(() => {
+          navigate(`/map/${date}`);
+        });
+    } else {
+      swal.fire({
+        icon: 'error',
+        title: trip.errorTitle,
+        text: trip.errorText,
+        timer: 1000,
+        timerProgressBar: true,
+        showConfirmButton: false,
+      });
+    }
   };
 
   return (

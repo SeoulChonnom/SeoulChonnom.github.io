@@ -9,8 +9,6 @@ function TripPage() {
   const [mapId, setMapId] = useState(1);
   const trip = date ? globalTrip.getTrip(date) : undefined;
 
-  console.log(trip);
-
   const moveButtonClick = (): void => {
     if (mapId === 1) {
       setMapId(2);
