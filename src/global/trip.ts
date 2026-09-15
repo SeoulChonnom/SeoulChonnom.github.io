@@ -1,20 +1,20 @@
-const logoImages = import.meta.glob('@/assets/img/logo/*.png', {
+const logoImages = import.meta.glob<string>('@/assets/img/logo/*.png', {
   eager: true,
   import: 'default',
 });
 
-const mapImages = import.meta.glob('@/assets/img/map_*.png', {
+const mapImages = import.meta.glob<string>('@/assets/img/map_*.png', {
   eager: true,
   import: 'default',
 });
 
-const getLogo = (date: string) =>
+const getLogo = (date: string): string | undefined =>
   logoImages[`/src/assets/img/logo/${date}.png`];
 
-const getMap = (fileName: string) =>
-  mapImages[`/src/assets/img/${fileName}.png`];
+const getMap = (fileName: string): string | undefined =>
+  mapImages[`/src/assets/img/map_${fileName}.png`];
 
-export interface trip {
+export interface Trip {
   date: string;
   desc1: string;
   desc2: string;
@@ -33,7 +33,13 @@ export interface trip {
   errorText: string;
 }
 
-export const globalTrip = {
+export interface GlobalTrip {
+  trips: Trip[];
+  getTrip(date: string): Trip | undefined;
+  getIsValid(date: string): number;
+}
+
+export const globalTrip: GlobalTrip = {
   trips: [
     {
       date: '20240929',
@@ -225,7 +231,7 @@ export const globalTrip = {
       errorText: '5시에 문 닫던 곳 있잖아~',
     },
   ],
-  getTrip(date: string) {
+  getTrip(date: string): Trip | undefined {
     const result = this.trips.find((item) => item.date === date);
     return result ? result : undefined;
   },
