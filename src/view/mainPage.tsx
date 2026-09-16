@@ -2,8 +2,14 @@ import TripList from '@/component/trip/tripList';
 
 import { globalTrip } from '@/global/trip';
 import '@/assets/css/index.css';
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 function MainPage() {
+  const [ayo, setAyo] = useState(true);
+  const [shoes, setShoes] = useState(true);
+  const navigate = useNavigate();
+
   return (
     <div id='content'>
       <div id='infoDiv'>서울 촌놈 나들이 기록 📷</div>
@@ -14,31 +20,36 @@ function MainPage() {
       </div>
       <div id='tobecontinueDiv'>서울 촌놈 나들이는 계속 될 예정....🥳</div>
       <div
-        className='fixButtonDiv'
-        //     :class="{ fix1: !shoesRecom && ayo, fix2: ayo, fixNone: !ayo }"
+        className={`fixButtonDiv ${!shoes && ayo ? 'fix1' : ayo ? 'fix2' : 'fixNone'}`}
         id='ayoFilmButtonDiv'
-        //   @click="onclickFilm"
+        onClick={() => window.open('http://naver.me/52RjLNuT')}
       >
         Choi's Film Art~🎞
         <div
           className='fixButtonCloseDiv'
           id='ayoFilmButtonCloseDiv'
-          //   @click.stop="onclickClose(1)"
+          onClick={(event) => {
+            event.stopPropagation();
+            setAyo(false);
+          }}
         >
           X
         </div>
       </div>
       <div
-        className='fixButtonDiv'
+        className={`fixButtonDiv ${shoes ? 'fix1' : 'fixNone'}`}
         //:class="{ fix1: shoesRecom, fixNone: !shoesRecom }"
         id='shoesRecomButtonDiv'
-        //@click="onclickShoes"
+        onClick={() => navigate('/shoesRecom')}
       >
         서울 촌놈의 신발 추천~👟
         <div
           className='fixButtonCloseDiv'
           id='shoesRecomButtonCloseDiv'
-          //@click.stop="onclickClose(2)"
+          onClick={(event) => {
+            event.stopPropagation();
+            setShoes(false);
+          }}
         >
           X
         </div>
