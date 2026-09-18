@@ -3,6 +3,8 @@ import MainPage from '@/view/mainPage';
 import TripPage from '@/view/tripPage';
 import '@/assets/css/common.css';
 import { Route, Routes, useNavigate } from 'react-router';
+import ShoesInfo from './view/shoesInfo';
+import ShoesRecom from './view/shoesRecom';
 
 function App() {
   const navigate = useNavigate();
@@ -19,6 +21,11 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage></MainPage>}></Route>
         <Route path='/map/:date' element={<TripPage></TripPage>}></Route>
+        <Route path='/shoesRecom' element={<ShoesRecom></ShoesRecom>}></Route>
+        <Route
+          path='/:brand/:shoesName'
+          element={<ShoesInfo></ShoesInfo>}
+        ></Route>
       </Routes>
       <div id='footer'>© Seoul CHONNOM</div>
     </div>

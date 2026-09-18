@@ -1,15 +1,53 @@
 import mjV2K from '@/assets/video/mjV2K.mp4';
 import mjZB5 from '@/assets/video/mjZB5.mp4';
 
-const shoeImages = import.meta.glob('@/assets/img/shoes/*.png', {
+const shoeImages = import.meta.glob<string>('@/assets/img/shoes/*.png', {
   eager: true,
   import: 'default',
 });
 
-const getShoes = (fileName: string) =>
+const getShoes = (fileName: string): string | undefined =>
   shoeImages[`/src/assets/img/shoes/${fileName}.png`];
 
-export const globalShoes = {
+export interface Shoe {
+  id: number;
+  divId: string;
+  shoesId: string;
+  name: string;
+  desc: string;
+  price: string;
+  img: string | undefined;
+  videoLink: string | undefined;
+  videoDesc: string | undefined;
+  video: string | undefined;
+  shoesInfo1: string;
+  shoesInfo2: string;
+  shoesInfo3: string;
+  shoesInfo4: string;
+  reviewImg1: string | undefined;
+  reviewDesc1: string;
+  reviewLink1: string;
+  reviewImg2: string | undefined;
+  reviewDesc2: string;
+  reviewLink2: string;
+}
+
+export interface Brand {
+  id: number;
+  brandId: string;
+  divId: string;
+  name: string;
+  desc: string;
+  img: string | undefined;
+  shoes: Shoe[];
+}
+
+export interface GlobalShoes {
+  brands: Brand[];
+  getBrandShoes(brand: string, shoesName: string): Shoe | undefined;
+}
+
+export const globalShoes: GlobalShoes = {
   brands: [
     {
       id: 1,
@@ -187,4 +225,16 @@ export const globalShoes = {
       ],
     },
   ],
+  getBrandShoes(brandName: string, shoesName: string): Shoe | undefined {
+    const brand: Brand | undefined = this.brands.find(
+      (item) => item.brandId === brandName
+    );
+
+    console.log(brand);
+
+    if (!brand) return undefined;
+    const shoe = brand.shoes.find((item: Shoe) => item.shoesId === shoesName);
+
+    return shoe ? shoe : undefined;
+  },
 };
